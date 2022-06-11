@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 
 const animals = ["Horse", "Turtle", "Elephant", "Monkey"];
 
+const animalsMap = animals.map((item) => "<li>" + item + "</li>");
+
 /**
  * change the content inside the map function
  **/
