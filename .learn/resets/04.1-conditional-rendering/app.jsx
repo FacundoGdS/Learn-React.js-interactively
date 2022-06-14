@@ -2,20 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
 
-const Alert = (props) => {    //should I use ternary operators?
-	if (props.color == "red") {
-		<div className="alert alert-danger" role="alert">
-			{props.text}
-		</div>;
-	} else if (props.color == "orange") {
-		<div className="alert alert-warning" role="alert">
-			{props.text}
-		</div>;
-	}
+const Alert = props => {
+	//your component here
+
 };
 Alert.propTypes = {
 	color: PropTypes.string,
-	text: PropTypes.string,
+	text: PropTypes.string
 };
 
 // here is where the alert component is being used, you don't have to edit this part,
