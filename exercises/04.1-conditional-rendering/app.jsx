@@ -2,13 +2,18 @@ import React from "react";
 import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
 
-const Alert = (props) => {    //should I use ternary operators?
+const Alert = (props) => {
+	//should I use ternary operators?
+	const colorClasses = {
+		red: "alert-danger",
+		orange: "alert-warning",
+	};
 	if (props.color == "red") {
-		<div className="alert alert-danger" role="alert">
+		<div className={`alert ${colorClasses[props.color]}`} role="alert">
 			{props.text}
 		</div>;
 	} else if (props.color == "orange") {
-		<div className="alert alert-warning" role="alert">
+		<div className={`alert ${colorClasses[props.color]}`} role="alert">
 			{props.text}
 		</div>;
 	}
